@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youssief Abdelazez | Full Stack .NET Developer</title>
     
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&family=Allura&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
+            background-color: #f3f4f6; /* Light gray background like the reference */
             overflow-x: hidden;
         }
         h1, h2, h3, .brand-font {
@@ -29,9 +32,11 @@
             font-size: clamp(4rem, 15vw, 12rem);
             line-height: 0.8;
         }
+        /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
+        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -44,34 +49,32 @@
         .project-card:hover .project-overlay {
             opacity: 1;
         }
-        .usp-card {
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        .usp-card:hover {
-            transform: translateY(-10px);
-            background-color: white;
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
-        }
     </style>
 </head>
 <body class="text-gray-900">
 
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 top-0 left-0 p-6 flex justify-between items-center mix-blend-difference text-white pointer-events-none">
         <div class="text-sm uppercase tracking-widest pointer-events-auto mix-blend-normal text-black font-bold">Creative Portfolio</div>
         <div class="text-sm pointer-events-auto mix-blend-normal text-black font-bold" id="current-date"></div>
     </nav>
 
+    <!-- Header / Hero Section -->
     <header class="min-h-screen flex flex-col justify-center items-center relative px-4 pt-20 overflow-hidden">
         <div class="text-center relative w-full max-w-7xl mx-auto flex flex-col items-center justify-center">
+            <!-- Background Text -->
             <h1 class="text-huge uppercase font-bold tracking-tighter text-gray-200 select-none absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 w-full">
                 Portfolio
             </h1>
             
+            <!-- User Image Container -->
             <div class="relative z-10 mb-8 mt-4">
                 <div class="w-64 h-64 md:w-80 md:h-80 rounded-full border-[6px] border-white shadow-2xl overflow-hidden relative mx-auto">
-                    <img src="assets/profile.jpg" alt="Youssief Abdelazez" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                    <!-- User Image -->
+                    <img src="6041812070057053314 (1).jpg" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Youssief Abdelazez" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
                 </div>
                 
+                <!-- Signature Overlay -->
                 <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-max pointer-events-none z-20">
                     <span class="script-font text-6xl md:text-8xl text-red-600 block rotate-[-5deg] drop-shadow-xl bg-white/10 backdrop-blur-sm px-4 rounded-xl border border-white/20">
                         Youssief Abdelazez
@@ -90,16 +93,17 @@
         </div>
     </header>
 
+    <!-- Introduction Section -->
     <section class="py-20 px-4 md:px-10 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 class="text-6xl md:text-8xl font-bold uppercase mb-6 tracking-tighter leading-none">
                     Intro<br>duction
                 </h2>
-                <h3 class="text-3xl font-bold mb-6">Hello, I'm <br><span class="text-red-600">Youssief Shaban</span></h3>
+                <h3 class="text-3xl font-bold mb-6">Hello, I'm <br><span class="text-red-600">Youssief abdelAzez Shaban</span></h3>
                 <p class="text-lg text-gray-600 mb-6 leading-relaxed">
                     I am an IT student at the Faculty of Computers and Information, <b>EELU (Hurghada Branch)</b>. 
-                    Currently in the final stages of the <b>Full Stack .NET</b> track. I have a strong foundation in networking and software development.
+                    Currently in the final stages of the <b>Full Stack .NET</b> track. I have a strong foundation in networking and software development, passionate about building scalable web applications and efficient backend systems.
                 </p>
                 <div class="flex gap-4">
                     <a href="#contact" class="bg-black text-white px-8 py-3 rounded-full hover:bg-red-600 transition duration-300 uppercase text-sm tracking-widest">
@@ -113,76 +117,280 @@
             
             <div class="relative">
                 <div class="grid grid-cols-2 gap-4">
-                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1000&auto=format&fit=crop" alt="Coding" class="w-full h-64 object-cover rounded-lg grayscale hover:grayscale-0 transition duration-500">
-                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1000&auto=format&fit=crop" alt="Server Room" class="w-full h-64 object-cover rounded-lg grayscale hover:grayscale-0 transition duration-500 mt-12">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Coding" class="w-full h-64 object-cover rounded-lg grayscale hover:grayscale-0 transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1558494949-efc535b5c479?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Server Room" class="w-full h-64 object-cover rounded-lg grayscale hover:grayscale-0 transition duration-500 mt-12">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-gray-900 text-white overflow-hidden relative">
-        <div class="max-w-7xl mx-auto px-4 md:px-10 relative z-10">
-            <div class="text-center mb-16">
-                <span class="text-red-500 font-bold tracking-[0.3em] uppercase text-sm">Why Me?</span>
-                <h2 class="text-5xl md:text-7xl font-bold uppercase tracking-tighter mt-4">Unique Selling<br>Proposition</h2>
+    <!-- Education Section -->
+    <section class="py-20 px-4 md:px-10 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16">
+                <h2 class="text-6xl md:text-8xl font-bold uppercase tracking-tighter leading-none">My<br>Education</h2>
+                <p class="md:w-1/3 text-gray-500 mt-4 md:mt-0">
+                    A journey of continuous learning in computer science, focusing on Information Technology and Modern Web Development.
+                </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/10 rounded-3xl overflow-hidden bg-white/5 backdrop-blur-sm">
-                <div class="usp-card p-10 border-b md:border-b-0 md:border-r border-white/10 flex flex-col items-center text-center">
-                    <div class="w-16 h-16 bg-red-600/20 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-microchip text-3xl text-red-500"></i>
+
+            <div class="border-t border-black py-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="font-bold text-xl">Egyptian E-Learning University (EELU)</h4>
+                        <span class="text-sm text-gray-500">Hurghada Branch</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 brand-font">Hybrid Expertise</h3>
-                    <p class="text-gray-400">Combining deep IT networking knowledge with modern software engineering.</p>
+                    <div>
+                        <p class="font-semibold">Faculty of Computers & Information</p>
+                        <p class="text-gray-600">Department of Information Technology (IT)</p>
+                    </div>
+                    <div class="text-right md:text-right text-red-600 font-bold">
+                        2022 - Present
+                    </div>
                 </div>
-                <div class="usp-card p-10 border-b md:border-b-0 md:border-r border-white/10 flex flex-col items-center text-center">
-                    <div class="w-16 h-16 bg-red-600/20 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-layer-group text-3xl text-red-500"></i>
+            </div>
+            
+            <div class="border-t border-gray-200 py-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="font-bold text-xl">Full Stack .NET Track</h4>
+                        <span class="text-sm text-gray-500">Intensive Training</span>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 brand-font">Scalable .NET Solutions</h3>
-                    <p class="text-gray-400">Specialized in the .NET ecosystem, focusing on high-performance APIs.</p>
-                </div>
-                <div class="usp-card p-10 flex flex-col items-center text-center">
-                    <div class="w-16 h-16 bg-red-600/20 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-shield-alt text-3xl text-red-500"></i>
+                    <div>
+                        <p class="font-semibold">Professional Development</p>
+                        <p class="text-gray-600">Mastering C#, ASP.NET Core, SQL Server, and Entity Framework.</p>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 brand-font">Business-First Logic</h3>
-                    <p class="text-gray-400">Translating complex business needs into functional digital products.</p>
+                    <div class="text-right md:text-right text-red-600 font-bold">
+                        Current
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-20 px-4 md:px-10 bg-white border-t border-gray-200">
+    <!-- Skills Section -->
+    <section class="py-20 px-4 md:px-10 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="relative order-2 lg:order-1">
+                 <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tech Setup" class="w-full h-full object-cover rounded-lg grayscale hover:grayscale-0 transition duration-500">
+                 <div class="absolute inset-0 border-2 border-red-600 transform translate-x-4 translate-y-4 -z-10 rounded-lg"></div>
+            </div>
+            
+            <div class="order-1 lg:order-2">
+                <h2 class="text-6xl md:text-7xl font-bold uppercase tracking-tighter mb-8">Personal<br>Skills</h2>
+                <p class="text-gray-600 mb-8">
+                    My technical expertise allows me to handle both frontend and backend challenges, while my soft skills ensure smooth collaboration within teams.
+                </p>
+
+                <div class="space-y-8">
+                    <!-- Tech Skills -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-code text-red-600 mr-2"></i> Technical Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">.NET Core</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">C#</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">SQL & Databases</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">Java</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">C++</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">HTML/CSS/JS</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">Networking</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm font-semibold">PHP</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-users text-red-600 mr-2"></i> Soft Skills</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Problem Solving & Algorithmic Thinking</li>
+                            <li>Teamwork & Collaboration</li>
+                            <li>Project Management Basics</li>
+                            <li>Adaptability & Continuous Learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Unique Selling Proposition (USP) -->
+    <!-- Designed to be "Chic" with high contrast and detailed content -->
+    <section class="py-24 px-4 md:px-10 bg-black text-white relative overflow-hidden">
+        <!-- Abstract Decoration -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-red-600 rounded-full mix-blend-multiply filter blur-[100px] opacity-20 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/10 pb-10">
+                <h2 class="text-5xl md:text-8xl font-bold uppercase tracking-tighter brand-font">
+                    Why<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-600">Choose Me?</span>
+                </h2>
+                <p class="md:w-1/3 text-gray-400 mt-6 md:mt-0 text-lg">
+                    I deliver more than just code. I provide comprehensive digital solutions that blend robust backend logic with engaging frontend experiences.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- USP Item 1 -->
+                <div class="group p-8 border border-white/10 hover:border-red-600 hover:bg-white/5 transition duration-500 relative overflow-hidden rounded-sm">
+                    <span class="absolute -top-6 -right-6 text-9xl font-bold text-white/5 group-hover:text-red-600/10 transition duration-500 brand-font">01</span>
+                    <div class="relative z-10">
+                        <i class="fas fa-layer-group text-3xl text-red-500 mb-6"></i>
+                        <h3 class="text-2xl font-bold uppercase brand-font mb-4">Full-Stack Harmony</h3>
+                        <p class="text-gray-400 font-light leading-relaxed">
+                            I bridge the gap between aesthetics and functionality. Unlike specialized developers, I understand the entire lifecycle of the request—from the <strong>SQL Database</strong> optimization to the pixel-perfect <strong>UI implementation</strong>. This ensures a seamless, crash-free user experience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- USP Item 2 -->
+                <div class="group p-8 border border-white/10 hover:border-red-600 hover:bg-white/5 transition duration-500 relative overflow-hidden rounded-sm">
+                    <span class="absolute -top-6 -right-6 text-9xl font-bold text-white/5 group-hover:text-red-600/10 transition duration-500 brand-font">02</span>
+                    <div class="relative z-10">
+                        <i class="fas fa-tachometer-alt text-3xl text-red-500 mb-6"></i>
+                        <h3 class="text-2xl font-bold uppercase brand-font mb-4">Scalability & Speed</h3>
+                        <p class="text-gray-400 font-light leading-relaxed">
+                            Leveraging the power of <strong>.NET Core</strong>, I build applications designed for high performance. My code is structured to handle growth, focusing on clean architecture and efficient algorithms that reduce server load and improve response times for end-users.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- USP Item 3 -->
+                <div class="group p-8 border border-white/10 hover:border-red-600 hover:bg-white/5 transition duration-500 relative overflow-hidden rounded-sm">
+                    <span class="absolute -top-6 -right-6 text-9xl font-bold text-white/5 group-hover:text-red-600/10 transition duration-500 brand-font">03</span>
+                    <div class="relative z-10">
+                        <i class="fas fa-puzzle-piece text-3xl text-red-500 mb-6"></i>
+                        <h3 class="text-2xl font-bold uppercase brand-font mb-4">Analytical Mindset</h3>
+                        <p class="text-gray-400 font-light leading-relaxed">
+                            With a solid background in <strong>IT & Networking</strong>, I don't just fix bugs; I identify root causes. I translate complex business requirements into logical technical solutions, ensuring that the software solves the actual business problem effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-20 bg-gray-100 text-black">
+        <div class="max-w-7xl mx-auto px-4 md:px-10">
+            <h2 class="text-6xl md:text-8xl font-bold uppercase tracking-tighter mb-16 text-center">Featured<br>Projects</h2>
+
+            <!-- Project 1: HypeGym -->
+            <div class="flex flex-col md:flex-row gap-8 mb-20 items-center">
+                <div class="w-full md:w-1/2 group cursor-pointer relative overflow-hidden rounded-xl shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Gym Website" class="w-full h-80 object-cover transition transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="text-white border border-white px-6 py-2 uppercase tracking-widest text-sm hover:bg-white hover:text-black transition">View Project</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <span class="text-red-600 font-bold tracking-widest uppercase text-sm">Web Development Activity</span>
+                    <h3 class="text-4xl font-bold mt-2 mb-4 brand-font">HypeGym Project</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A collaborative web development project demonstrating frontend skills. Designed to manage gym memberships and showcase classes. Focused on responsive design and user experience.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-black text-white px-3 py-1 rounded-full text-xs">HTML/CSS</span>
+                        <span class="bg-black text-white px-3 py-1 rounded-full text-xs">JavaScript</span>
+                        <span class="bg-black text-white px-3 py-1 rounded-full text-xs">Team Project</span>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/youssief-abdel-aziz-06a90b312_hypegym-firstlaunch-webdevelopment-activity-7331429571273060352-WJWB" target="_blank" class="inline-flex items-center text-black font-bold hover:text-red-600 transition">
+                        View on LinkedIn <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2: Azuz Butcher -->
+            <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                <div class="w-full md:w-1/2 group cursor-pointer relative overflow-hidden rounded-xl shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Meat Shop" class="w-full h-80 object-cover transition transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                         <span class="text-white border border-white px-6 py-2 uppercase tracking-widest text-sm hover:bg-white hover:text-black transition">View Project</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 md:text-right">
+                    <span class="text-red-600 font-bold tracking-widest uppercase text-sm">E-Commerce Solution</span>
+                    <h3 class="text-4xl font-bold mt-2 mb-4 brand-font">Azuz Butcher Shop</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A functional PHP-based e-commerce platform developed for a meat shop. Includes product catalog, shopping cart functionality, and backend management capabilities.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6 md:justify-end">
+                        <span class="bg-black text-white px-3 py-1 rounded-full text-xs">PHP</span>
+                        <span class="bg-black text-white px-3 py-1 rounded-full text-xs">MySQL</span>
+                        <span class="bg-black text-white px-3 py-1 rounded-full text-xs">Web Design</span>
+                    </div>
+                    <a href="https://azuzbutcher.cu.ma/index.php" target="_blank" class="inline-flex items-center text-black font-bold hover:text-red-600 transition">
+                        Visit Website <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold uppercase mb-12 brand-font">Services Offered</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition duration-300 border border-gray-100">
+                    <i class="fas fa-laptop-code text-5xl text-red-600 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4 brand-font">Full Stack Dev</h3>
+                    <p class="text-gray-600">Building complete web solutions using .NET architecture, ensuring performance and scalability.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition duration-300 border border-gray-100">
+                    <i class="fas fa-server text-5xl text-red-600 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4 brand-font">Database Design</h3>
+                    <p class="text-gray-600">Efficient SQL Server schema design, optimization, and data management for business apps.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition duration-300 border border-gray-100">
+                    <i class="fas fa-network-wired text-5xl text-red-600 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4 brand-font">IT & Networking</h3>
+                    <p class="text-gray-600">Understanding of network infrastructures and server environments to support software deployment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-20 px-4 md:px-10 bg-black text-white">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="mb-8 md:mb-0 text-center md:text-left">
                 <h2 class="text-3xl font-bold uppercase mb-2">Youssief Abdelazez</h2>
-                <p class="text-gray-500">Based in Hurghada, Red Sea, Egypt</p>
+                <p class="text-gray-400">Based in Hurghada, Red Sea, Egypt</p>
+                <p class="text-gray-400 mt-2">Open to internships and freelance work.</p>
             </div>
+
             <div class="flex gap-6">
-                <a href="https://github.com/youssief2000" class="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center hover:bg-black hover:text-white transition duration-300">
+                <a href="#" class="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center hover:bg-white hover:text-black hover:border-white transition duration-300">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/youssief-abdel-aziz-06a90b312/" target="_blank" class="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300">
+                <a href="https://www.linkedin.com/in/youssief-abdel-aziz-06a90b312/" target="_blank" class="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300">
                     <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:hello@reallygreatsite.com" class="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center hover:bg-red-600 hover:text-white hover:border-red-600 transition duration-300">
+                    <i class="fas fa-envelope"></i>
                 </a>
             </div>
         </div>
-        <div class="text-center mt-12 text-sm text-gray-400">
+        <div class="text-center mt-12 text-sm text-gray-600">
             &copy; <span id="year"></span> Youssief Abdelazez. All rights reserved.
         </div>
     </footer>
 
     <script>
+        // Set current date/year
         const date = new Date();
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
         document.getElementById('current-date').textContent = date.toLocaleDateString('en-US', options);
         document.getElementById('year').textContent = date.getFullYear();
 
+        // Simple animation on scroll
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 50) {
-                nav.classList.add('bg-white/80', 'backdrop-blur-md', 'text-black', 'shadow-sm');
+                nav.classList.add('bg-white/80', 'backdrop-blur-md');
                 nav.classList.remove('text-white');
+                nav.classList.add('text-black', 'shadow-sm');
             } else {
                 nav.classList.remove('bg-white/80', 'backdrop-blur-md', 'shadow-sm');
             }
@@ -190,4 +398,3 @@
     </script>
 </body>
 </html>
-
